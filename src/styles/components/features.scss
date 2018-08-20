@@ -1,0 +1,96 @@
+.features {
+    margin-bottom: 164px;
+    @include mintablet() {
+     padding: 0 10px;   
+    }
+}
+
+
+
+.features_title {
+    font-family: 'GothamProBold', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: $black;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 93px;
+    @include mintablet() {
+     font-size: 28px;   
+    }
+    @include phone() {
+     margin-bottom: 60px;     
+     font-size: 22px;  
+    }
+    svg {
+        width: 75px;
+    }
+    .waves {
+        stroke: $red;
+        fill: none;
+    }
+}
+
+.features_wrap {
+    padding: 0;
+    display: flex;
+    margin-bottom: 89px;
+    flex-wrap: wrap;
+}
+
+.features_item {
+    list-style-type: none;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include laptop() {
+     width: 50%;
+     margin-bottom: 45px;   
+    }
+    @include phone() {
+     width: 100%;       
+    }
+}
+
+.features_img-wrap {
+    margin-bottom: 45px;
+}
+
+.features_img {
+    width: 148px;
+    height: 148px;
+    img {
+        object-fit: cover;
+    }
+}
+
+.features_item-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+}
+
+.features_image {
+    background-image: url('../images/grid.png');
+    background-position: 40% 140%;
+    background-repeat: no-repeat;
+    background-size: 114% 85%;
+}
+
+.features_image-content {
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.features_item-text--width {
+    @include tablet() {
+        width: 300px;  
+       }
+}

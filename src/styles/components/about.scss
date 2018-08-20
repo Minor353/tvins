@@ -1,0 +1,103 @@
+.about {
+    background-color: #EFEFEF;
+    padding-bottom: 60px;
+    position: relative;
+    @include tablet() {
+        padding: 0 20px;
+        padding-bottom: 60px;
+    }
+}
+
+.about_decoration {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: $white;
+    svg {
+        display: block;
+    }
+    .cls-3 {
+        fill: #EFEFEF;
+    }
+}
+
+.about_main-item {
+    display: flex;
+    align-items: flex-end;
+    z-index: 500;
+    @include phone() {
+     flex-direction: column;       
+    }
+}
+
+.about_main-content {
+    height: 340px;
+    z-index: 6;
+    @include phone() {
+        text-align: center;
+    }
+}
+
+.about_main-img {
+    width: 362px;
+    height: 430px;
+    z-index: 5;
+    @include laptop() {
+        height: 380px;
+        margin-right: 20px;
+    }
+    @include phone() {
+        margin: 0 auto;
+
+        width: 265px;       
+    }
+    img {
+        height: 100%;
+    }
+}
+
+.about_main-title {
+    font-family: 'GothamProBold', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: $black;
+    text-transform: uppercase;
+    @include laptop() {
+        font-size: 34px;
+        margin-top: 75px;
+    }
+    @include phone() {
+        font-size: 22px;
+    }
+    svg {
+        width: 75px;
+    }
+    .waves {
+        stroke: $red;
+        fill: none;
+    }
+}
+
+.about_main-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $black;
+    height: 160px;
+    width: 682px;
+    overflow: scroll;
+    overflow-x: hidden;
+    @include laptop() {
+        font-size: 16px;
+        width: 490px;
+    }
+    @include tablet() {
+        width: 95%;
+    }
+    @include phone() {
+        font-size: 14px;
+    }
+}
+

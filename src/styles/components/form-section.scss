@@ -1,0 +1,89 @@
+.form-section {
+    background-color: #EFEFEF;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-section_wrap {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 78px 130px;
+    padding-bottom: 150px;  
+    @include laptop() {
+        padding-bottom: 135px;
+    }
+    @include phone() {
+        padding: 78px 30px;
+    }
+}
+
+.form-section_title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: $black;
+    font-size: 36px;
+    text-transform: uppercase;
+    @include laptop() {
+        font-size: 34px;
+    }
+    @include phone() {
+        font-size: 22px;
+    }
+}
+
+.form-section_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $black;
+    margin: 0;
+    margin-bottom: 100px;
+    text-align: center;
+    @include laptop() {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    @include phone() {
+        font-size: 14px;
+    }
+    svg {
+        width: 75px;
+    }
+    .waves {
+        stroke: $red;
+        fill: none;
+    }
+}
+
+.form_decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    svg {
+        display: block;
+    }
+    .cls-1 {
+        fill: #fff;
+        stroke: none;
+    }
+    .cls-3 {
+        fill: #fff;
+    }
+}
+
+.form-section_offer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #C5C5C5;
+    @include tablet() {
+        text-align: center;
+    }
+}

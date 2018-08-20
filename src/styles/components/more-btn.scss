@@ -1,16 +1,17 @@
-.order-btn {
+.more-btn {
     text-decoration: none;
-    color: $white;
     font-family: 'GothamProMedium', sans-serif;
     font-weight: 400;
+    color: $red;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 19px 54px;
-    background-color: $red;
-    margin-left: 30%;
-    transition: 0.3s;
+    padding: 19px 45px;
+    border: 2px solid $red;
+    margin-top: auto;
+    transition: 0.5s;
     &:hover {
         background-color: #ab0000;
-        transition: 0.3s;
+        color: $white;
+        transition: 0.5s;
     }
 }

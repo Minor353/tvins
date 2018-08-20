@@ -1,0 +1,56 @@
+.contacts_title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: $black;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+    border-bottom: 1px solid $red;
+    margin-bottom: 17px;
+    @include laptop() {
+        font-size: 16px;
+      }
+}
+
+.contacts_item-wrap {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts_item {
+    list-style-type: none;
+    .fa-phone {
+        font-size: 14px;
+        color: #F0F0F0;
+        margin-right: 14px;
+    }
+    .fa-phone--color {
+        color: $black;
+    }
+    .fa-envelope {
+        font-size: 14px;
+        color: $black;
+        margin-right: 14px;
+    }
+    .fa-map-marker-alt {
+        font-size: 14px;
+        color: $black;
+        margin-right: 14px;
+    }
+}
+
+.contacts_item-link {
+    text-decoration: none;
+    color: $black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    @include laptop() {
+        font-size: 13px;
+      }
+}
+
+.contacts_item-maill {
+    margin: 20px 0;
+}
+

@@ -1,0 +1,22 @@
+.logo {
+    display: block;
+    width: 143px;
+    height: 60px;
+    img {
+        width: 100%;
+    }
+}
+
+.logo--header {
+    margin-right: 166px;
+    @include laptop() {
+        margin-right: 80px;
+    }
+}
+
+.logo--footer {
+    margin-bottom: 32px;
+    @include tablet() {
+        margin-bottom: 0;
+    }
+}

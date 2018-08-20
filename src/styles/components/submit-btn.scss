@@ -1,16 +1,17 @@
-.order-btn {
-    text-decoration: none;
-    color: $white;
+.submit-btn {
     font-family: 'GothamProMedium', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: $white;
     text-transform: uppercase;
-    padding: 19px 54px;
+    padding: 19px 77px;
     background-color: $red;
-    margin-left: 30%;
-    transition: 0.3s;
+    border-color: transparent;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: 0.5s;
     &:hover {
         background-color: #ab0000;
-        transition: 0.3s;
+        
     }
 }

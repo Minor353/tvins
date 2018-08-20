@@ -1,0 +1,13 @@
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    @include laptop() {
+        width: 768px;
+      }
+    @include tablet() {
+        width: 100%;
+    } 
+    @include phone() {
+        width: 100%;
+    }
+}

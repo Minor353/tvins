@@ -1,0 +1,39 @@
+.social_title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: $black;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+    border-bottom: 1px solid $red;
+    margin-bottom: 17px;
+    @include laptop() {
+        font-size: 16px;
+      }
+}
+
+.social_item-wrap {
+    padding: 0;
+    margin: 0;
+}
+
+.social_item-link {
+    text-decoration: none;
+    color: $black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    @include laptop() {
+        font-size: 13px;
+      }
+}
+
+.social_item {
+    list-style-type: none;
+    margin-bottom: 18px;
+    .fab {
+        font-size: 14px;
+        color: $black;
+        margin-right: 14px;
+    }
+}

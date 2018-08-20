@@ -1,0 +1,47 @@
+.slider-pagination-main {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-pagination-rewview {
+    position: absolute;
+    bottom: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-pagination {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+.slider-pagination_item {
+    list-style-type: none;
+    width: 15px;
+    height: 8px;
+    background-color: $white;
+    opacity: 0.5;
+    border-radius: 7px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slider-pagination_item-active {
+    width: 27px;
+    opacity: 1;
+}
+
+
+.slider-pagination_item--color {
+    background-color: $grey;
+}
+
+.slider-pagination_item-active--color {
+    width: 27px;
+    background-color: $red;
+    opacity: 1;
+}

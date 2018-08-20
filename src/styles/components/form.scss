@@ -1,0 +1,53 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_input-wrap {
+    margin-bottom: 44px;
+    @include laptop() {
+     display: flex;
+     flex-direction: column;   
+    }
+}
+
+.form_input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: $grey;
+    padding: 15px 5px;
+    padding-left: 45px;
+    
+}
+
+
+
+
+.fa-lock {
+    font-size: 14px;
+    color: #C5C5C5;
+}
+
+.form_label {
+    position: relative;
+    margin-right: 30px;
+    @include laptop() {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .fas {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        color: #A8A8A8;
+        @include laptop() {
+        top: 19px;
+        }
+    }
+}
+
+.form_label:last-child {
+    margin-right: 0;
+}

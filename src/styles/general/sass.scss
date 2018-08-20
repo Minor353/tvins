@@ -1,0 +1,43 @@
+/*Переменные*/
+$white: #fff;
+$black: #000000;
+$red: #DF0000;
+$darkgrey: #313131;
+$grey: #4A4A4A;
+//////////////////////////////
+$laptop: 1100px;
+$tablet: 768px;
+$mintablet: 600px;
+$phone: 480px;
+$minphone: 320px;
+/*Миксины*/
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin mintablet {
+  @media screen and (max-width: $mintablet) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin minphone {
+  @media screen and (max-width: $minphone) {
+    @content;
+  }
+}
