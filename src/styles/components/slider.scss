@@ -10,12 +10,11 @@
     display: flex;
 }
 
-.slider-item {
+.slider_item {
     list-style-type: none;
     position: relative;
     img {
         object-fit: cover;
-        width: 100%;
     }
 }
 
@@ -60,7 +59,7 @@
         font-size: 45px;
     }
     @include phone() {
-     font-size: 32px;       
+        font-size: 32px;
     }
     svg {
         width: 75px;

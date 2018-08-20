@@ -3,8 +3,6 @@
     position: relative;
 }
 
-
-
 .review_title {
     font-family: 'GothamProBold', sans-serif;
     font-weight: 700;
@@ -14,7 +12,7 @@
     margin-top: 0;
     text-align: center;
     @include laptop() {
-     font-size: 34px;   
+        font-size: 34px;
     }
     @include phone() {
         font-size: 22px;
@@ -66,15 +64,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 25px;
     @include laptop() {
-     display: none; 
-     &:first-child {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-    }  
+        display: none;
+        &:first-child {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
     }
-    
 }
 
 .review_slider-item:nth-child(2) {
@@ -84,7 +82,7 @@
 .review_slider-content {
     padding: 30px 34px;
     padding-bottom: 20px;
-    box-shadow: 0px 0px 12px rgba($color: #818181, $alpha: 0.4) ;
+    box-shadow: 0px 0px 12px rgba($color: #818181, $alpha: 0.4);
     min-height: 285px;
     margin-bottom: 70px;
     position: relative;
@@ -98,8 +96,7 @@
     left: 50%;
     transform: translateX(-50%);
     border: 20px solid transparent;
-    border-top-color: $white; 
-
+    border-top-color: $white;
 }
 
 .review_slider-img-wrap {
@@ -108,6 +105,7 @@
     overflow: hidden;
     width: 136px;
     height: 136px;
+    margin: 0 auto;
     @include laptop() {
         margin: 0 auto;
     }
