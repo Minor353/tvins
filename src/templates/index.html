@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tvins</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
@@ -44,7 +43,7 @@
             <nav class="nav">
                 <ul class="nav_wrap">
                     <li class="nav_item">
-                        <a href="#" class="nav_item-link">Главная</a>
+                        <a href="#" class="nav_item-link  nav_item-link--active">Главная</a>
                     </li>
                     <li class="nav_item  nav_item-sub">
                         <a href="#" class="nav_item-link">Продукция</a>
@@ -119,7 +118,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.565 4.477">
                                     <defs></defs>
                                     <path class="waves" d="M926,474.023l8.354-3.4,8.354,3.4,8.354-3.4,8.354,3.4,8.354-3.4,8.354,3.4,8.354-3.4,8.354,3.4,8.354-3.4"
-                                        transform="translate(-925.812 -470.086)" />
+                                        transform="translate(-925.812 -470.086)" /> 
                                 </svg>
                             </div>
                             <div class="slider_content-text">в Днепре</div>
@@ -172,12 +171,7 @@
                 </div>
 
             </div>
-            <ul class="slider-pagination  slider-pagination-main">
-                <li class="slider-pagination_item  slider-pagination_item-active"></li>
-                <li class="slider-pagination_item"></li>
-                <li class="slider-pagination_item"></li>
-                <li class="slider-pagination_item"></li>
-            </ul>
+           
         </section>
 
         <section class="products">
@@ -475,13 +469,40 @@
                             </div>
                         </div>
 
+                        <div class="review_slider-item">
+                            <div class="review_slider-content">
+                                <div class="review_slider-title">Николай Усович</div>
+                                <p class="review_slider-text">
+                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                                    на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                    размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                </p>
+                            </div>
+                            <div class="review_slider-img-wrap">
+                                <div class="review_slider-img">
+                                    <img src="./assets/images/ava.png" alt="review-foto">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review_slider-item">
+                            <div class="review_slider-content">
+                                <div class="review_slider-title">Николай Усович</div>
+                                <p class="review_slider-text">
+                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                                    на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                    размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                </p>
+                            </div>
+                            <div class="review_slider-img-wrap">
+                                <div class="review_slider-img">
+                                    <img src="./assets/images/ava.png" alt="review-foto">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <ul class="slider-pagination  slider-pagination-rewview">
-                        <li class="slider-pagination_item  slider-pagination_item--color  slider-pagination_item-active--color"></li>
-                        <li class="slider-pagination_item  slider-pagination_item--color"></li>
-                        <li class="slider-pagination_item  slider-pagination_item--color"></li>
-                        <li class="slider-pagination_item  slider-pagination_item--color"></li>
-                    </ul>
+                    
                 </div>
             </div>
         </section>
@@ -553,6 +574,7 @@
             <div class="footer_copiright">2018 &#169; Твинс Строй. Все права защищены.</div>
         </div>
     </footer>
+    <script src="./assets/scripts/index-min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -565,6 +587,34 @@
                 autoplaySpeed: 4000,
                 arrows: false,
                 pauseOnHover: false,
+                dots: true,
+            });
+
+            $('.review_slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                pauseOnHover: false,
+                dots: true,
+                centerMode: true,
+                responsive: [
+                    {
+                    breakpoint: 769,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        slidesToShow: 1
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        slidesToShow: 1
+                    }
+                    }
+                ]
             });
         });
         //////////////////////////////////

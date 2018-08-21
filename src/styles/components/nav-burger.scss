@@ -6,8 +6,8 @@
   }
   
   .burger {
-    width: 24px;
-    height: 4px;
+    width: 30px;
+    height: 7px;
     background-color: $grey;
     border-radius: 4px;
     position: relative;
@@ -18,9 +18,9 @@
     display: block;
     position: absolute;
     left: 0;
-    top: -8px;
-    width: 24px;
-    height: 4px;
+    top: -10px;
+    width: 30px;
+    height: 7px;
     background-color: $grey;
     border-radius: 4px;
     transition: transform 0.4s, top 0.4s;
@@ -31,10 +31,45 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 8px;
-    width: 24px;
-    height: 4px;
+    top: 10px;
+    width: 30px;
+    height: 7px;
     background-color: $grey;
     border-radius: 4px;
     transition: transform 0.4s, top 0.4s;
   }
+
+  .burger--active {
+    background-color: transparent;
+    transition: background-color 0.4s;
+    height: 0;
+    z-index: 9999;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 7px;
+        background-color: $white;
+        border-radius: 4px;
+        transform: rotate(45deg);
+        transition: transform 0.4s, top 0.4s;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 7px;
+        background-color: $white;
+        border-radius: 4px;
+        transform: rotate(-45deg);
+        transition: transform 0.4s, top 0.4s;
+    }
+}
