@@ -1,0 +1,11 @@
+.info-btn {
+    text-decoration: none;
+    font-family: 'GothamProMedium', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: $red;
+    text-transform: uppercase;
+    @include tablet() {
+        font-size: 18px;
+    }
+}

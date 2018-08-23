@@ -4,6 +4,13 @@
     position: relative;
 }
 
+.form-section--bg-galery {
+    background-color: $white;
+    .form-section_wrap {
+        box-shadow: 0 0 10px rgba($color: #858585, $alpha: .5);
+    }
+}
+
 .form-section_wrap {
     background-color: $white;
     display: flex;

@@ -1,0 +1,12 @@
+.special {
+    height: 400px;
+    @include tablet() {
+        height: 280px;
+    }
+    @include phone() {
+        height: 200px;
+    }
+    img {
+        width: 100%;
+    }
+}

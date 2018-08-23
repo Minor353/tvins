@@ -1,0 +1,11 @@
+.map {
+    height: 460px;
+    width: 50%;
+    background-color: grey;
+    @include tablet() {
+        width: 80%;
+    }
+    @include phone() {
+        width: 90%;
+    }
+}

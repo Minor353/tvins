@@ -1,0 +1,143 @@
+.product {
+    margin-bottom: 50px;
+    @include tablet() {
+        padding: 0 20px;
+    }
+    @include phone() {
+        padding: 0 30px;
+    }
+}
+
+.product_header {
+    display: flex;
+    margin-bottom: 97px;
+    @include tablet() {
+        flex-direction: column;
+    }
+}
+
+.product_midle {
+    margin-bottom: 65px;
+    svg {
+        width: 75px;
+        display: block;
+        margin-bottom: 27px;
+        .waves {
+            stroke: $red;
+            fill: none;
+        } 
+    }
+}
+
+.product_bottom {
+    margin-bottom: 56px;
+    svg {
+        width: 75px;
+        display: block;
+        margin-bottom: 27px;
+        .waves {
+            stroke: $red;
+            fill: none;
+        } 
+    }
+}
+
+.product_img-wrap {
+    margin-right: 68px;
+    @include tablet() {
+        width: 390px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    @include phone() {
+        width: 100%;
+    }
+}
+
+.product_img-main {
+    width: 390px;
+    height: 443px;
+    padding: 36px 10px;
+    box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    margin-bottom: 14px;
+    @include phone() {
+        width: 100%;
+    }
+}
+
+.product_img-sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_sub-wrap {
+    max-width: 123px;
+    height: 77px;
+    box-sizing: border-box;
+    padding: 7px 27px;
+    border: 1px solid #C2C2C2;
+    @include phone() {
+        width: 33%;
+    }
+
+}
+
+.product_header-text {
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 67px;
+}
+
+.product_header-price {
+    font-family: 'GothamProMedium', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 86px;
+}
+
+.product_title {
+    font-family: 'GothamProMedium', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 27px;
+    @include phone() {
+        font-size: 24px;
+    }
+}
+
+.product_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #464646;
+    @include phone() {
+        font-size: 12px;
+    }
+}
+
+.product_special-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $red;
+    margin-bottom: 85px;
+    @include phone() {
+        font-size: 12px;
+    }
+}
+
+.product_palitra {
+    height: 260px;
+    @include phone() {
+        height: 150px;
+    }
+    img {
+        width: 100%; 
+    }
+}
